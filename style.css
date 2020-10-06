@@ -1,0 +1,155 @@
+/* Creates Margins for Entire Website */
+html {
+margin: 10px;
+padding: 30px;
+}
+
+/* sets background as image and has two so when page or image is done it goes to the next image which then repeats. */
+body {
+font-family: sans-serif;
+background-image: url("b1.png"), url("b2.png");
+background-size: 100% auto;
+background-repeat: no-repeat, repeat;
+line-height: 1.4;
+}
+
+.content2 p, .content2 h2 {
+color: black;
+}
+
+.content2 h2 {
+text-align: center;
+font-size: 2em;
+}
+
+.mainHead {
+  background: white;
+}
+
+.site-title {
+  margin: 0 0 1em;
+  padding: 1em 0;
+  font-size: 2.5em;
+  font-weight: 800px;
+  text-align: center;
+  color: black;
+}
+
+/* Gets rid of underline */
+.site-title a {
+  text-decoration: none;
+}
+
+.box a {
+color: black;
+text-decoration: none;
+text-align: center;
+}
+
+.content2 {
+padding: .5em;
+}
+
+.content2 h2 {
+margin-top: 0;
+margin-bottom: .5em;
+font-weight: bold;
+}
+
+.content2 p {
+font-size: 95%;
+}
+
+/* div inside of div isooated im and ifram of box div only. Allows images to change with window */
+.box img, .box iframe {
+border: 0;
+width: 100%;
+height: auto;
+}
+
+/* flex-wrap wraps content around text and em is used for font size to change or increase based off of window size flex allows object to change */
+.boxs {
+  margin-top: -1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* I GOT CALC FROM W# SCHOOL WIKI HELP IN ORDER TO FIX MY BOXES */
+/* Moves things to the right and better spacing */
+.box {
+  background: white;
+  margin-bottom: 2em;
+  display: flex;
+  flex: 0 1 calc(33% - .5em);
+}
+
+  .Pages {
+    text-align: center;
+   }
+
+  .Titles{
+    line-height: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  /* Add Style to Title */
+  .mainTitle {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 150px;
+    font-weight: bold;
+  }
+
+  .subTitle {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+  }
+
+/* Padding on top allows spacing for the content above */
+  .mainContent {
+    padding-top: 0px;
+  }
+
+/* Padding allows spacing on either side of content */
+  .content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  /* Display flex allows images to decrease or increase based off of need */
+  .sectionTitle {
+    text-align: center: center;
+    color: white;
+    display: flex;
+    font-size: 50pt;
+  }
+
+  /* Paragraph attributes*/
+  p {
+    color: white;
+    font-size: 95%;
+    text-align: center;
+  }
+
+  /* Justify content controls box along axis. Allows three images to be placed side by side*/
+  .imgRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* Paired with imgRow class, set width to number of images divided into 100% */
+  .pic {
+    width: 33%;
+  }
+
+/* Other Header Attributes... Used points to adjustify for window */
+  .Header {
+    text-align: Center;
+    font-size: 50pt;
+    color: white;
+  }
